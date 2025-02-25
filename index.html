@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chess-my hobby</title>
+
+<style>
+    body {
+        background: linear-gradient(91.9deg, rgb(93, 248, 219) 27.8%,
+         rgb(33, 228, 246) 67%);
+        
+ 
+    }
+    h1 {
+        text-align: center;
+    }
+    h2 {
+        text-align: center;
+    }
+    img {
+        max-width: 100%;
+    }
+    p {
+        font-size: 18px;
+        line-height: 1.5;
+    }
+    button {
+        display: block;
+        margin: 0 auto;
+        border: 1px solid aquamarine;
+        background-color: white;
+        font-size: 20px;
+        border-radius: 6px;
+        padding: 10px 15px;
+        transition: all 150ms ease-in-out;
+    } 
+    .theme-button {
+        font-size: 12px;
+        background-color: black;
+        color: white;
+        padding: 5 8px;
+    }
+    .theme-button:hover {
+        background: white;
+        color: black;
+    }
+    button:hover {
+        background: aquamarine;
+        cursor: pointer;
+    }
+    .container {
+        background: white;
+        max-width: 400px;
+        padding: 20px;
+        border-radius: 10px;
+        margin: 20px auto;
+    }
+    .chess-intro-picture {
+        border-radius: 10px;
+        transition: all 150ms ease-in-out;
+        
+    }
+
+    .chess-intro-picture:hover {
+        filter: contrast(80%);
+        transform: scale(1.1);
+    }
+
+    .grid {
+        margin: 15px 0;
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        grid: gap 20px;
+    }
+    .grid img {
+        width: 100%;
+        border-radius: 8px;
+        transition: all 150ms ease-in-out;
+    }
+    .grid img:hover {
+        transform: scale(2);
+    }
+
+    .dark {
+        background: linear-gradient(
+          112.1deg,
+          rgb(32, 38, 57) 11.4%,
+          rgb(63, 76, 119) 70.2%
+        );
+        color: white;
+      }
+
+      .dark .container {
+        background: rgba(255, 255, 255, 0.1);
+      }
+
+      .dark a {
+        color: aquamarine;
+      }
+    footer {
+        text-align: center;
+        margin: 10px 0;
+        font-size: 18px;
+    }
+</style>
+</head>
+<body>
+
+    <button class="theme-button">Change Theme</button>
+<div class="container">
+<h1>
+    Chess
+</h1>
+<h2>My Favourite Hobby</h2>
+<a href="https://en.wikipedia.org/wiki/Chess" target="_blank">
+<img src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/158/169/original/dominic-kurniawan-suryaputra-gMYDFmK1bwU-unsplash.jpg?1739962845" alt="chess" class="chess-intro-picture" />
+</a>
+<div class="grid">
+<img src="
+https://s3.amazonaws.com/shecodesio-production/uploads/files/000/158/170/original/chris-burns-CCRQoJPyuf4-unsplash.jpg?1739962861" alt="" />
+
+<img src="
+https://s3.amazonaws.com/shecodesio-production/uploads/files/000/158/171/original/gr-stocks-Iq9SaJezkOE-unsplash.jpg?1739962881" alt="" />
+
+<img src="
+https://s3.amazonaws.com/shecodesio-production/uploads/files/000/158/172/original/vd-photography-Bwt5M8z1kXg-unsplash.jpg?1739962917" alt="" />
+
+
+<img src="
+https://s3.amazonaws.com/shecodesio-production/uploads/files/000/158/339/original/deva-darshan-ILMMu2YhtcQ-unsplash.jpg?1740129327" alt="" />
+</div>
+
+<p>
+    Chess is a two-player strategy game that involves moving pieces on an 8x8 board with the goal of checkmating the opponent’s king. It is one of the oldest and most popular board games in the world.
+
+The origins of chess trace back to Chaturanga, a game played in India around the 6th century CE. Chaturanga later spread to Persia, where it became Shatranj, and then to the Islamic world and Europe, evolving into modern chess by the 15th century. The rules were standardized in the 19th century, leading to the development of competitive chess as we know it today.
+
+<br /><br />
+        📖
+        <a href="https://en.wikipedia.org/wiki/Salsa_(dance)">
+          <strong> Read on Wikipedia </strong>
+        </a>
+</p>
+
+</div>
+<footer>
+    Coded by <a href="https://github.com/Licia27" target="_blank">Dev Andy</a>
+</footer>
+
+<script>
+    function changeTheme() {
+      let body = document.querySelector("body");
+
+      // body.classList.toggle("dark");
+
+      if (body.classList.contains("dark")) {
+        body.classList.remove("dark");
+      } else {
+        body.classList.add("dark");
+      }
+    }
+
+    let themeButton = document.querySelector(".theme-button");
+    themeButton.addEventListener("click", changeTheme);
+  </script>
+    
+</body>
+</html>
